@@ -54,9 +54,8 @@ class Snake:
         self._add_new_tail(self.new_position)
     #================================================== Public ===========================================
     def has_snake_collided_with_body(self):
-        for snake_body_part in self.snake:
-            if snake_body_part != self.snake_head and self.snake_head.distance(snake_body_part)<10:
-            #self.snake_head.position() == snake_body_part.position():
+        for snake_body_part in self.snake[1:]:            
+            if self.snake_head.distance(snake_body_part)<10:            
                 print("snake collided with body")
                 return True
         return False
