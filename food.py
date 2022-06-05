@@ -6,7 +6,7 @@ class Food(Turtle):
         super().__init__(shape="turtle")        
         self.color("red")
         self.penup()
-        self.shapesize(stretch_len=0.5, stretch_wid=0.5)
+        self.shapesize(stretch_len=0.7, stretch_wid=0.7)
         self.xposition = 0
         self.yposition = 0     
         self.hide_food()

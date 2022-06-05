@@ -3,10 +3,15 @@ from snake import Snake
 from food import Food
 import time
 from score_board import ScoreBoard
+# from PIL import Image
 
 def setup_screen():
     screen = Screen()
     screen.setup(width=600, height=590)
+    
+    screen.bgpic('bg1.gif')
+    #screen.bgpic('snake_bg.gif')
+    
     screen.title("My Snake Game")
     screen.bgcolor("black")
     screen.tracer(0)
@@ -48,23 +53,3 @@ def start_game():
     close_screen_on_click(screen)
 
 start_game()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
